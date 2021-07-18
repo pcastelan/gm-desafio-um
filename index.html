@@ -5,40 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Castelan Supermercados - Ofertas</title>
+    <script src="assets/js/storage.js"></script>
     <script src="assets/js/scripts.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <div id="conteudo">
-        <header id="header">
-            <div class="header__wrapper">
-               <div class="brand">
-                   <h1>Castelan Supermercados</h1>
-               </div>
-            </div>
-        </header>
         <div id="main">
-            <div class="ofertas__wrapper">
-                <h3>Apenas essa semana aqui no Castelan Supermercados:</h3>
-                <div class="ofertas">
-                    <div class="ofertas__item">
-                        <div class="oferta-foto"></div>
-                        <div class="oferta-description">
-                            <div class="oferta-nome"></div>
-                            <div class="oferta-preco"></div>
-                        </div>
-                    </div>
-                    <div class="ofertas__item"></div>
-                    <div class="ofertas__item"></div>
-                    <div class="ofertas__item"></div>
+            <div class="text__wrapper">
+                <div class="brand">
+                    <img src="assets/img/logo.png" alt="Castelan Supermercados" title="Castelan Supermercados">
                 </div>
+                <p>#VemAí</p>
+                <h3>Black Friday <br>2021</h3>
             </div>
             <div class="newsletter">
-                <form method="POST">
-                    <div class="form-item"><input type="text"></div>
-                    <div class="form-item"><input type="text"></div>
-                    <button type="submit">Cadastrar</button>
-                </form>
+                <div class="form__wrapper">
+                    <p>Se inscreva e receba nossas ofertas exclusivas</p>
+                    <form method="POST" id="newsletterForm">
+                        <div class="form-item">
+                            <label for="">Nome</label>
+                            <input type="text" name="nome" id="newsletterName">
+                        </div>
+                        <div class="form-item">
+                            <label for="">E-mail</label>
+                            <input type="email" name="email" id="newsletterEmail">
+                        </div>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div id="footer">
